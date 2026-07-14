@@ -77,13 +77,13 @@
                 "精灵语"
             ]
 			
-			"skill": {
+			"skill": [
         "Performance": "+10",
         "Deception": "+7",
         "Persuasion": "+7",
         "Insight": "+4",
         "Perception": "+4"
-      }
+			]
         },
         {
             "name": "骷髅射手",
@@ -147,10 +147,10 @@
                     ]
                 }
             ],
-			  "skill": {
+			  "skill": [
         "Stealth": "+7",
         "Perception": "+5"
-			  },
+			  ],
             "senses": [
                 "黑暗视觉 60 尺"
             ],
