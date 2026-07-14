@@ -1,0 +1,227 @@
+{
+    "monster": [
+        {
+            "name": "卡斯帕·范廷",
+            "ENG_name": "Kaspa Fanting",
+            "source": "HOMEBREW",
+            "page": 0,
+            "size": "M",
+            "type": "humanoid",
+            "alignment": "chaotic neutral",
+            "ac": [
+                {
+                    "ac": 14,
+                    "from": []
+                }
+            ],
+            "hp": {
+                "average": 85,
+                "formula": "13d8 + 26"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 10,
+            "dex": 16,
+            "con": 14,
+            "int": 14,
+            "wis": 12,
+            "cha": 18,
+            "cr": "5",
+            "trait": [
+                {
+                    "name": "锐利的眼",
+                    "entries": [
+                        "卡斯帕不会被魅惑状态影响。此外，卡斯帕对幻术的察觉检定具有优势。"
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "杖击",
+                    "entries": [
+                        "{@atk mw} +6 命中, 触及 5 尺, 命中：{@damage 1d6 + 3} 钝击伤害"
+                    ]
+                },
+                {
+                    "name": "改写场面（充能 5–6）",
+                    "entries": [
+                        "卡斯帕用力敲击地面并高声下令，30 尺内最多 3 名生物，必须进行一次 {@dc 15} 感知豁免，失败则移动速度减半且下一次攻击或豁免具有劣势。成功则无效果。"
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "不对，重来",
+                    "entries": [
+                        "卡斯帕可以使 30 尺内一名生物，重新掷一次攻击或豁免，结果取更低的那个。"
+                    ]
+                }
+            ],
+            "senses": [
+                "黑暗视觉 60 尺",
+                "被动察觉 14"
+            ],
+            "immune": [
+                "魅惑"
+            ],
+            "languages": [
+                "通用语",
+                "精灵语"
+            ]
+        },
+        {
+            "name": "骷髅射手",
+            "ENG_name": "Skeleton Archer",
+            "source": "HOMEBREW",
+            "page": 0,
+            "size": "M",
+            "type": "undead",
+            "alignment": "守序邪恶",
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": []
+                }
+            ],
+            "hp": {
+                "average": 112,
+                "formula": "15d8 + 45"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 14,
+            "dex": 18,
+            "con": 16,
+            "int": 10,
+            "wis": 14,
+            "cha": 8,
+            "cr": "7",
+            "trait": [
+                {
+                    "name": "誓仇弓",
+                    "entries": [
+                        "战斗开始时选择一个它能看到的敌对生物作为仇敌。对仇敌发动远程攻击时，攻击检定具有优势。目标不会从非全身掩护的状态中受益，骷髅射手也不会因为超出常规射程而承受劣势。如果攻击命中，仇敌将额外受 {@damage 3d6} 穿刺伤害。"
+                    ]
+                },
+                {
+                    "name": "不死本质",
+                    "entries": [
+                        "不需要空气，饮食和睡眠。"
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "多重攻击",
+                    "entries": [
+                        "发动两次射击或一次穿刺。"
+                    ]
+                },
+                {
+                    "name": "射击",
+                    "entries": [
+                        "{@atk rw} +7 命中，射程 150/600 尺，单一目标。命中：{@damage 1d8 + 4} 穿刺伤害，若目标是仇敌，则额外造成 {@damage 3d6} 穿刺伤害"
+                    ]
+                },
+                {
+                    "name": "穿刺（充能 5–6）",
+                    "entries": [
+                        "射出一支能够自动修正轨迹的箭矢，选择 60 尺内至多 2 个目标，目标进行 {@dc 15} 敏捷豁免，失败受到 {@damage 4d10} 穿刺伤害，成功则伤害减半，若其中包含仇敌目标，该目标豁免具有劣势。"
+                    ]
+                }
+            ],
+            "senses": [
+                "黑暗视觉 60 尺",
+                "被动察觉 15"
+            ],
+            "damage_resist": [
+                "非魔法钝击",
+                "非魔法穿刺",
+                "非魔法挥砍"
+            ],
+            "damage_immune": [
+                "毒素"
+            ],
+            "damage_vulnerable": [
+                "钝击"
+            ],
+            "condition_immune": [
+                "中毒",
+                "力竭"
+            ],
+            "languages": [
+                "理解通用语但不能说"
+            ]
+        }
+    ],
+    "spell": [],
+    "item": [
+        {
+            "name": "奥术摄影机",
+            "ENG_name": "Arcane Camera",
+            "source": "HOMEBREW",
+            "page": 0,
+            "type": "Wondrous Item",
+            "rarity": "very rare",
+            "weight": 0,
+            "value": 0,
+            "entries": [
+                "卡斯帕从贡德神殿神启之手圣堂工匠珀尔·科尔维特处获得的原型装置。由精巧的齿轮和水晶透镜构成，利用魔力将所见所闻记录成可重现的影像。极珍稀奇物（需同调）。可以用来拍摄。"
+            ]
+        },
+        {
+            "name": "通讯器",
+            "ENG_name": "Communicator",
+            "source": "HOMEBREW",
+            "page": 0,
+            "type": "Wondrous Item",
+            "rarity": "uncommon",
+            "weight": 0,
+            "value": 0,
+            "entries": [
+                "非普通魔法物品。可以在同一时间启动和保持与多达10个生物的对话，交流时通过心灵感应听到彼此的声音。珍惜奇物（需同调）。"
+            ]
+        },
+        {
+            "name": "巴哈姆特的护符",
+            "ENG_name": "Amulet of Bahamut",
+            "source": "HOMEBREW",
+            "page": 0,
+            "type": "Wondrous Item",
+            "rarity": "very rare",
+            "weight": 0,
+            "value": 0,
+            "entries": [
+                "一枚由精金打造，如同龙首般的护符。极珍稀奇物（需同调）。在遇到成年或更强大的巨龙时会凸显力量，为同调者提供盲视（10尺）、敏锐感官（察觉优势）、魔宠（寻获魔宠，伪龙形态）和威压（对龙类攻击有优势，龙类对同调者的豁免有劣势）。"
+            ]
+        },
+        {
+            "name": "演艺戒指",
+            "ENG_name": "Performance Ring",
+            "source": "HOMEBREW",
+            "page": 0,
+            "type": "Ring",
+            "rarity": "uncommon",
+            "weight": 0,
+            "value": 0,
+            "entries": [
+                "卡斯帕赠予饰演特殊角色玩家的戒指，来自轻唱剧院，是他获得最佳演员奖时的奖品。戒指由精金雕刻成展翅翱翔的巨鹰形状。非普通戒指。佩戴期间表演检定获得双倍熟练加值。"
+            ]
+        },
+        {
+            "name": "有翼黑蛇标记",
+            "ENG_name": "Winged Black Snake Mark",
+            "source": "HOMEBREW",
+            "page": 0,
+            "type": "Trinket",
+            "rarity": "none",
+            "weight": 0,
+            "value": 0,
+            "entries": [
+                "散塔林会成员的标志，有可能在街头袭击的强盗身上发现该印记。"
+            ]
+        }
+    ]
+}
